@@ -14,21 +14,6 @@ the Git repositories belonging to https://github.com/plurimath[Plurimath].
 
 == Usage
 
-////
-=== Updating repositories
-
-From time to time, repos are added, removed or renamed.
-To reflect these updates easily we use the `gh-repo-manifest`
-script to update `cimas-config/cimas.yml`.
-
-[source,sh]
-----
-# TODO: Needs to be fixed
-# bin/gh-repo-manifest -o relaton,relaton
-----
-////
-
-
 === Managing Cimas configuration (in `cimas-config/`)
 
 The primary config file is `cimas-config/cimas.yml`.
@@ -46,7 +31,6 @@ You have to first install Cimas using:
 gem install cimas
 ----
 
-
 These are the commands to run:
 
 [source,sh]
@@ -54,7 +38,7 @@ These are the commands to run:
 cd plurimath/support
 export CIMAS_CONFIG=cimas-config/cimas.yml
 export CIMAS_MASTER_DIR=cimas-config
-export CIMAS_ROOT=~/src/relaton/cimas-wd
+export CIMAS_ROOT=~/src/plurimath
 
 cimas setup -f $CIMAS_CONFIG -r $CIMAS_ROOT
 

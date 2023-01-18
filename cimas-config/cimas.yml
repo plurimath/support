@@ -27,7 +27,7 @@ repositories:
     files:
       .hound.yml: .hound.yml
       .rubocop.yml: .rubocop.yml
-      .github/workflows/rake.yml: gh-actions/latexml/rake.yml
+      .github/workflows/rake.yml: latexml-rake.yml
       .github/workflows/release.yml: release.yml
   plane1converter:
     remote: ssh://git@github.com/plurimath/plane1converter
@@ -35,7 +35,7 @@ repositories:
     files:
       .hound.yml: .hound.yml
       .rubocop.yml: .rubocop.yml
-      .github/workflows/rake.yml: gh-actions/latexml/rake.yml
+      .github/workflows/rake.yml: rake.yml
       .github/workflows/release.yml: release.yml
   unicode2latex:
     remote: ssh://git@github.com/plurimath/unicode2latex
