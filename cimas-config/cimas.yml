@@ -1,0 +1,82 @@
+---
+settings:
+  reviewers: {}
+  author:
+    - CAMOBAP
+
+repositories:
+  asciimath2unitsml:
+    remote: ssh://git@github.com/plurimath/asciimath2unitsml
+    branch: main
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: rake.yml
+      .github/workflows/release.yml: release.yml
+  plurimath:
+    remote: ssh://git@github.com/plurimath/plurimath
+    branch: main
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: rake.yml
+      .github/workflows/release.yml: release.yml
+  latexmath:
+    remote: ssh://git@github.com/plurimath/latexmath
+    branch: main
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: gh-actions/latexml/rake.yml
+      .github/workflows/release.yml: release.yml
+  plane1converter:
+    remote: ssh://git@github.com/plurimath/plane1converter
+    branch: master
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: gh-actions/latexml/rake.yml
+      .github/workflows/release.yml: release.yml
+  unicode2latex:
+    remote: ssh://git@github.com/plurimath/unicode2latex
+    branch: master
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: rake.yml
+      .github/workflows/release.yml: release.yml
+  html2asciimath:
+    remote: ssh://git@github.com/plurimath/html2asciimath
+    branch: main
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: rake.yml
+      .github/workflows/release.yml: release.yml
+  omml2mathml:
+    remote: ssh://git@github.com/plurimath/omml2mathml
+    branch: master
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: rake.yml
+      .github/workflows/release.yml: release.yml
+  mathml2asciimath:
+    remote: ssh://git@github.com/metanorma/mathml2asciimath
+    branch: master
+    files:
+      .hound.yml: .hound.yml
+      .rubocop.yml: .rubocop.yml
+      .github/workflows/rake.yml: rake.yml
+      .github/workflows/release.yml: release.yml
+
+groups:
+  plurimath:
+  - asciimath2unitsml
+  - plurimath
+  - latexmath
+  - plane1converter
+  - unicode2latex
+  - html2asciimath
+  - omml2mathml
+  - mathml2asciimath
